@@ -1,3 +1,4 @@
+// swift-tools-version:5.0
 import PackageDescription
 
 let package = Package(name: "ObjectMapper",
@@ -8,8 +9,7 @@ let package = Package(name: "ObjectMapper",
                       products: [.library(name: "ObjectMapper",
                                           targets: ["ObjectMapper"])],
                       targets: [.target(name: "ObjectMapper",
-                                        path: "Source"),
+                                        path: "Sources"),
                                 .testTarget(name: "ObjectMapperTests",
-                                            dependencies: ["Alamofire"],
                                             path: "Tests")],
                       swiftLanguageVersions: [.v5])
